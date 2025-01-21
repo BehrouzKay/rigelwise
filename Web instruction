@@ -1,0 +1,59 @@
+Steps to Host Your Website on GitHub Pages:
+Create a GitHub Repository:
+
+Log in to your GitHub account.
+Create a new repository. The name can be anything, but if you want the site to be accessible directly (without specifying a path), name the repository as:
+<username>.github.io (replace <username> with your GitHub username).
+Add Your Static Files:
+
+Upload your HTML, CSS, and JavaScript files to the repository.
+Make sure your main file (the home page) is named index.html.
+Enable GitHub Pages:
+
+Go to the Settings of your repository.
+Scroll down to the Pages section:
+Select the Branch where your files are located (usually main).
+Click Save.
+After a few minutes, your website will be live at <username>.github.io.
+Connect a Custom Domain:
+
+If you have a custom domain and want to use it instead of the default GitHub URL:
+Go to the Pages section in the repository settings and add your custom domain.
+In your domain’s DNS management panel, create a CNAME record pointing to <username>.github.io.
+DNS changes might take a few hours to propagate.
+Important Notes:
+GitHub Pages is designed for static websites and does not support backend functionality or databases.
+If you need more advanced features, you can consider alternatives like Vercel or Netlify, which also support static sites and offer additional features for free.
+
+
+
+
+1. Log in to Your Domain Provider's Account
+  Go to the website where you purchased your domain (e.g., GoDaddy, Namecheap, Google Domains, etc.).
+  Log in to your account.
+2. Find the DNS Management or Settings Section
+  Look for something like DNS Settings, DNS Management, Manage DNS, or Domain Settings.
+  This is where you can manage records like CNAME, A, etc., for your domain.
+3. Add a New Record
+  Once you’re in the DNS settings section, look for an option to Add Record or Create New Record.
+  Select the CNAME option (sometimes listed under record types like A, MX, CNAME, etc.).
+4. Enter the CNAME Details
+  Name/Host/Record Name: Enter the subdomain you want to connect (e.g., www if you want to connect www.yourdomain.com, or leave it blank for the root domain).
+  Value/Points To: Enter your GitHub Pages URL: <username>.github.io (replace <username> with your GitHub username).
+  TTL (Time to Live): Leave it as the default value (e.g., 1 hour or Auto).
+5. Save the Record
+  Click Save or Add Record to apply the changes.
+  6. Wait for Propagation
+  It may take a few minutes to a few hours for the changes to propagate globally.
+  Once it’s updated, your domain will point to your GitHub Pages site.
+
+  
+Example for Clarity:
+If your GitHub username is johnsmith, and your domain is example.com:
+
+You’d create a CNAME record:
+Name/Host: www
+Value/Points To: johnsmith.github.io
+Then www.example.com will load your GitHub Pages website.
+
+If you want to connect the root domain (example.com without the "www"), additional steps might be needed, such as adding an A record pointing to GitHub’s IP addresses (you can find this information in the GitHub Pages documentation).
