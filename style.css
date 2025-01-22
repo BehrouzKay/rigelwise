@@ -277,8 +277,23 @@ header {
     flex-direction: column;
     Margin:auto;/* this two attributes, Margin and max-width put the website content in the middle */
     padding: 20px;
-    background-color: #fcfaf8;
     min-height: 500px;
+
+    background-color: #eaeaea; /* رنگ پایه خاکستری روشن */
+  background-image: 
+    radial-gradient(circle, rgba(255, 255, 255, 0.7) 1%, transparent 1%), /* لایه 1 */
+    radial-gradient(circle, rgba(0, 0, 0, 0.05) 1%, transparent 1%), /* لایه 2 */
+    radial-gradient(circle, rgba(255, 255, 255, 0.1) 1%, transparent 1%), /* لایه 3 */
+    linear-gradient(90deg, rgba(0, 0, 0, 0.03) 0.1%, transparent 1%), /* لایه 4 */
+    linear-gradient(45deg, rgba(255, 255, 255, 0.05) 1%, transparent 1%); /* لایه 5 */
+  background-size: 
+    5px 5px, /* لایه 1 */
+    7px 7px, /* لایه 2 */
+    10px 10px, /* لایه 3 */
+    100px 100px, /* لایه 4 */
+    150px 150px; /* لایه 5 */
+  background-blend-mode: soft-light, multiply, overlay, darken, normal;
+
   }
   
   /*==========================================================================================*/
